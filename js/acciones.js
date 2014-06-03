@@ -1,16 +1,10 @@
 // JavaScript Document
 	$(document).ready(function(e){
 
-
-
  document.addEventListener("deviceready",function(){
 	 alert ("Listo");
-  $('.boton_vibrar').tap(function(){
-	  alert("vibrar");
-    navigator.notification.vibrate(500);
-	alert("despues");
-  });
-   
+   navigator.notification.vibrate(500);
+
 
 },false); //deviceready
 
