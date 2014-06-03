@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+  
+
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+            <script src="js/acciones.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/hamsters-tema2.min.css">
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="b">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/anime.png" width="100" height="120">
+    </div>
+    <div id="vista" align="center">
+<img src="imagenes/descarga (1).png" width="175" height="175">
+    </div>
+  
+  <div id="vista" align="center">
+
+    </div>
+
+
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>HAMSTERS</h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p> Los cricetinos (Cricetinae) son una subfamilia de roedores, conocidos vulgarmente como hámsteres.
+      
+      
+      <div align="center">
+      
+      <img src="imagenes/alimento.gif" width="67" height="69">
+      </div>
+      <br>
+      <p> Se han identificado 18 especies actuales distintas, agrupadas en siete géneros. La mayoría son originarias de Oriente Medio y del sureste de los Estados Unidos. Al ser muy fáciles de criar en cautividad, son ampliamente usados como animales de laboratorio y como mascotas. Todas las especies se caracterizan por las bolsas expansibles, llamadas abazones, ubicadas en el interior de la boca.<br><br>
+
+Los hámsteres son pequeños roedores nocturnos que cuentan más de 15 especies agrupadas en siete diferentes géneros. 
+      </p>
+      <div align="center">
+<img src="imagenes/Fotor0528231058.png" width="324" height="324">
+</div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="b" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+      <p><img src="imagenes/hamham1.gif" width="148" height="120"></p>
+      <div data-role="controlgroup">
+        <a data-role="button" id="vida" class="boton_vibrar">Promedio de vida</a>      
+        <a data-role="button" id="enfer" class="boton_vibrar"> Enfermedades comunes</a>
+        <a data-role="button" id="cuidar" class="boton_vibrar">Cuidado hamster</a>
+        <a data-role="button" id="tip" class="boton_vibrar">Razas de hamster</a>
+        <a data-role="button" id="domo" class="boton_vibrar" >Adiestramiento</a>
+        <a data-role="button" id="acerca" class="boton_vibrar">Acerca de:</a>
+        
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="b" data-icon="delete" data-inline="true">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="ray1" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Promedio de Vida</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/prom-vida.png" width="259" height="194">
+    </div>
+    
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+  
+    <p>el promedio de vida de un hamster es de 2 a 3 a&ntilde;os y en raras ocasiones hasta 5.</p>
+    <p> <b><i>LA VEJEZ EN SU ENTORNO NATURAL</i></b><br>
+    </p>
+      <p>En cuanto empiezan a mermar sus facultades fisicas y prestan menos atencion al entorno, no tardan en ser presa de un ave rapaz o de cualquier otro depredador. Por este motivo, en sus lugares de origen es casi imposible encontrar ejemplares viejos.&nbsp;</p>
+      <p>Con la edad cambian:</p>
+      <ul type="square">
+      <li>Comportamiento:</li>
+<p>Cada vez menos de su refugio y duerme durante la mayor parte del tiempo. Parece como si ya no te interesase el mundo que io rodea</p>
+
+    <li>Higiene Corporal: </li>
+    <p>Ya no tiene fuerzas para limpiarse con tanta frecuencia como antes. </p>
+    <li>Enfermedades:</li>
+<p>Las unicas enfermedades propias de la vejez que se observan con cierta frecuencia son la sequedad de ojos y la aparicion de tumores</p>
+    <li>Sentidos</li>
+<p>No se puede afirmar con seguridad si pierde vista, oido u olfato.
+En el fondo, la mision fundamental de cualquier ser vivo es la de contribuir al mantenimiento de su especie.</p>
+    <li>Movilidad</li>
+    <p>Sus movimientos se vuelven torpes y mal coordinados. Camina despacio y se tambalea.</p>
+    <div align="center">
+    <img src="imagenes/enfermo.png" width="254" height="192">
+    </div>
+    </ul>
+      
+      <p><br>
+      </p>
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+</div>
+
+
+<div data-role="page" id="enf" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Enfermedades </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+   
+    
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+  
+      <p><br>
+      
+       <div align="center">
+    <img src="imagenes/enfermedades.jpg" width="259" height="194">
+    </div>
+        Los&nbsp;<strong>h&aacute;msteres</strong>&nbsp;tienen un sistema inmunitario muy bien desarrollado y si los cuidamos bien, es raro que lleguen a enfermar. Sin embargo son unos peque&ntilde;os&nbsp;<strong>roedores</strong>&nbsp;muy sensibles al estr&eacute;s, a los cambios de temperatura bruscos, a la alimentaci&oacute;n mon&oacute;tona y a la falta de higiene en la jaula.</p>
+      <p>Las enfermedades mas comunes son:<br><br><br>
+
+<b><i>Diarrea</i></b><br>
+
+Síntomas: Los excrementos del hámster son pastosos o líquidos y tiene la región anal siempre sucia. El animal se muestra menos activo e incluso come menos.
+Posibles causas: Infección bacteriana o ingestión de plantas de interior venenosas. También es posible que le hayamos dado demasiado alimento fresco o que lo hayamos dejado suelto y se haga comido algo del suelo.
+<br>
+<br>
+
+
+<b><i>Enfermedad de cola húmeda</i></b><br>
+
+Síntomas: El hámster tiene algunas partes de la cola húmedas y padece diarrea.
+Posibles causas: Colibacterias. Suele afectar a ejemplares jóvenes que sufren estrés.
+Solución: Dejar de darle alimentos frescos, limpiarle la región anal para evitar infecciones y llevarlo al veterinario lo antes posible.<br>
+<br>
+
+
+
+<b><i>Enfriamientos</i></b><br>
+Síntomas: El hámster estornuda, tiene flujo nasal y produce un silbido al respirar.
+Posibles causas: Mal mantenimiento. Puede que el hámster haya estado expuesto a corrientes de aire o a cambios bruscos de temperatura.
+<br><br>
+
+
+<i><b>Abscesos</b></i><br>
+
+Síntomas: El hámster tiene un bulto subcutáneo (formado por pus) en cualquier parte del cuerpo.
+Posibles causas: Por heridas, mordeduras, rasguños o cortes no desinfectados.
+<br><br>
+
+
+<b><i>Tumores</i></b><br>
+
+Síntomas: El hámster tiene un bulto o alguna zona dura bajo su piel.
+Posibles causas: Envejecimiento.
+<br><br>
+
+
+
+<b><i>Enfermedades de los ojos</i></b><br>
+
+Síntomas: El hámster tiene exceso de secreción lacrimal y sus ojos están abultados o infectados.
+Posibles causas: Infección bacteriana de los ojos causada por una pequeña lesión ocular producida por el heno.
+<br><br>
+
+
+<b><i>Diabetes</i></b><br>
+
+Síntomas: El hámster es viejo, pesa un poco más de la cuenta, orina mucho y tiene los ojos turbios.
+Posibles causas: Alimentación demasiado rica en azúcar o en grasas.
+      </p>
+      <div align="center">
+      <img src="imagenes/descarga.png" width="236" height="214"></div>
+	
+    
+    </div>
+    </div>
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="c" data-theme="b">
+	<div data-role="header" data-position="fixed">
+   
+    <h1>Cuidados hamster</h1>
+   
+		
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justificy">
+    Antes que nada debemos tener en cuenta que los hamsterson animales muy territoriales,por consiguiente la primera regla que tiene que tener en cuenta es evitar tener dos hamster en la misma jaula  para evitar peleas entre ellos  e incluso heridas o peor aun hasta la muerte.
+   <br>
+<br>
+Te mostraremos unos tips de como tener contento a tu hamster:
+<ul type="disc">
+<li>Compre una jaula apta para hámster y cúbrala de aserrín o viruta de madera con aproximadamente 3 cm de espesor para que el animalito se sienta cómodo.</li><br>
+<div align="center">
+<img src="imagenes/ASERRIN.jpg" width="176" height="96">
+</div>
+
+
+<li>Lave su jaula dos veces por semana sacando el aserrín, bebedero y comedero para poder lavarla perfectamente con agua y jabón. Puede utilizar un cepillo suave para tallar los lugares más recónditos de la jaula.</li>
+<div align="center">
+<img src="imagenes/jaula.png" width="182" height="173">
+</div>
+
+<li>Cepille el pelaje de su hámster 1 vez por semana con un cepillo especial para él que puede encontrar en cualquier tienda de mascotas.</li></ul>
+<div align="center">
+<img src="imagenes/CEPILLANDO.jpg" width="165" height="108">
+</div>
+
+<li>Aliméntelo con mezclas de frutos secos, semillas de girasol, cereales, manzanas y peras, eso les encantará.</li>
+
+<div align="center">
+<img src="imagenes/COMIENDO.jpg" width="164" height="134">
+
+</div>
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+</div>
+
+<div data-role="page" id="tipos" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Razas de hamster</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    <div align="center"></div>
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+<br>
+<div align="center">
+<img src="imagenes/razas de hamster.png" width="260" height="194">
+</div>
+
+Hay diversas razas de hamster que algunos nosotros desconocemos; A continuacion te mostraremos las razas de hamster que hay y algunas pequeñas caracteristicas<br>
+<br>
+
+
+<b><i>Hamster de campbell</i></b><br>
+
+Originario de Asia Central,este tipo de hamster puede medir cerca de 15 cm, es originario de siria.Es muy territorial y suelen pelearse mucho si hay otros hamster en la misma jaula.Le gusta mucho dar vueltas en la rueda.
+<div align="center">
+<img src="imagenes/campel.jpg" width="191" height="178">
+</div>
+
+<b><i>Hamster dorado</i></b><br>
+
+Este tipo de hamster puede medir cerca de 15 cm, es originario de siria.Es muy territorial y suelen pelearse mucho si hay otros hamster en la misma jaula.Le gusta mucho dar vueltas en la rueda.
+<div align="center">
+<img src="imagenes/hamsterdorado.jpg" width="251" height="168">
+</div>
+
+
+<b><i>Hamster de angora</i></b><br>
+Se caracteriza por su gran pelaje cuando son adultos para soportar los frios inviernos
+<div align="center">
+<img src="imagenes/angora.jpg" width="190" height="152">
+</div>
+
+
+
+<b><i>Hasmter ruso</i></b><br>
+Este hamster a los 19 o 20 dias alcanza su madurez sexual por lo que se reproduce bastante por año, pero la mala noticia es que solo alcanza una esperanza de vida de un año y medio o dos años.Es de tamaño pequeño y pesa 35-50 gramos.Tiene las mismas caracteristicas de un hamster chino pero el chino es alargado fino y mas delgado.
+</div>
+
+<div align="center">
+<img src="imagenes/ruso.gif" width="193" height="183">
+</div>
+
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="domo1" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Adiestramiendo al hamster </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div> 
+        </div>  
+	
+    <div data-role="content">	
+    
+    
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+  
+    
+      
+    <div align="center">
+    <img src="imagenes/domo.jpg" width="256" height="176">
+    </div>
+        No todos los hamster son dificiles de domesticar,Algunos es imposible conseguir domesticarlos.<br>
+La raza de hamster mas facil para la domesticación es el <i>hamster sirio</i> y el mas comun que se encuentra en las tiendas de mascota.<br>
+Mostraremos algunos tips que puedes utilizar:<br>
+<br>
+
+      <ul type="disc">
+      <li>Acostúmbralos al sonido de tu voz al leerles un libro o cantarles una canción. Esto los hará sentir cómodos y seguros cuando escuchen tu voz.</li>
+      
+     
+<br>
+<br>
+
+<li>Pon una semilla de girasol o golosina para hámster en tu mano y luego pon tu mano en la jaula. Espera pacientemente a que el hámster suba a tu mano y tome la golosina; haz esto alrededor de una hora. Tu hámster, sin embargo, puede que tome tu dedo y lo muerda. En esta ocasión, cuando el hámster suba a tu mano, lentamente levántalo fuera de su jaula y acaricia su pelo. </li>
+<div align="justify">
+      <img src="imagenes/truco uno.jpg" width="203" height="161">
+      </div>
+<br>
+<br>
+
+
+<li>Para "girar" o "date vuelta", coloca la golosina atrás de su espalda, así él se volteará para alcanzarla. Después haces lo mismo como con "párate". Dilo y repítelo. Dale la golosina sólo hasta cuando haya hecho el truco y ahora tienes un hámster entrenado.  </li><br>
+
+
+<div align="justify">
+      <img src="imagenes/truc.jpg" width="260" height="193">
+      </div>
+      
+    
+<br>
+
+
+<li>Enseña a tu hámster a subir por tu hombro. Ponlo sobre tu hombro para que se sienta cómodo. Haz eso por unos días. Después pones una golosina bajo tu camisa y sostienes el brazo hacia el hámster. El hámster subirá por tu hombro buscando golosinas. </li><br>
+<br>
+
+
+</ul>
+</div>
+</div>
+    
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+<div data-role="page" id="de" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Acerca de :</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+   <div data-role="content">
+    <div align="center">
+    <img src="imagenes/truco2.jpg" width="210" height="136">
+    
+      </div>
+       
+       <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+  
+      <p>Esta pagina habla sobre el cudado de los habster y las maneras  adecuadas para tenerlos en una ambiente ameno y apto para su uso de ellos.<br> </p>
+      
+      <div align="center">
+      
+      <img src="imagenes/hamstersitos.gif" width="205" height="177">
+      </div>
+      
+      
+      <p> Lamentablemente este roedor es un animal que su capacidad de vida es de 3 a 1 año de vida , por eso mientras ellos esten aqui te enseñaremos cuales son las maneras para tenerlo en muy buenos cuidados</p>
+      <br>
+<br>
+Pagina creada por:Diana Ivone Osorio Solis
+<br>
+2 de Junio del 2014
+     </div>
+      </div>
+      
+     
+     
+ 
+	<div data-role="footer" data-position="fixed" align="center">
+ Diana Ivone Osorio Solis 4f
+	</div>
+    </div>
+
+</body>
+
+</html>
